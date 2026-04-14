@@ -1,0 +1,119 @@
+{
+  "editorial_strategy": {
+    "goal": "Atrair tráfego orgânico qualificado de famílias interessadas em turismo rural, Serra Catarinense e experiências com animais, convertendo em reservas diretas",
+    "tone": "Informativo e acolhedor, com CTAs sutis para reserva. Escrita em português brasileiro, familiar e caloroso, como uma conversa entre amigos.",
+    "word_count": "800-1200",
+    "target_keywords_per_post": 3,
+    "internal_links_per_post": 2,
+    "images_per_post": 0,
+    "posting_schedule": "sexta-feira às 14h",
+    "content_pillars": [
+      {
+        "pillar": "Destino",
+        "description": "O que fazer, onde ir, roteiros pela Serra Catarinense e região de Rio Rufino",
+        "example_topics": ["Cachoeiras imperdíveis na Serra Catarinense", "O que fazer em Rio Rufino e arredores", "Roteiro de 3 dias na Serra Catarinense"]
+      },
+      {
+        "pillar": "Experiência",
+        "description": "Vivências na pousada: animais, cavalgadas, pescaria, vida no campo, gastronomia serrana",
+        "example_topics": ["Passeio a cavalo na Serra Catarinense", "Pescaria em família: diversão no lago", "Colheita de frutas na serra"]
+      },
+      {
+        "pillar": "Família",
+        "description": "Dicas para viagens em família, atividades para crianças, benefícios do contato com animais e natureza",
+        "example_topics": ["Atividades para crianças na serra", "Benefícios do contato com animais para crianças", "Férias em família no campo"]
+      },
+      {
+        "pillar": "Dicas práticas",
+        "description": "Informações úteis para quem visita a Serra Catarinense",
+        "example_topics": ["O que levar para a Serra Catarinense", "Melhor época para visitar a serra", "Como chegar a Rio Rufino"]
+      }
+    ]
+  },
+
+  "seo_rules": {
+    "title_format": "{Título do Post} | Blog Pousada Recanto dos Pôneis",
+    "meta_description_max_chars": 155,
+    "url_slug_format": "lowercase, hifenizado, sem acentos, max 5 palavras",
+    "heading_structure": "H1 único (título), H2 para seções, H3 para subseções",
+    "schema_type": "BlogPosting",
+    "canonical_base": "https://recantodosponeis.com.br/blog/",
+    "open_graph_type": "article",
+    "required_meta": [
+      "title", "meta description", "canonical", "og:title", "og:description",
+      "og:url", "og:type", "og:image", "twitter:card", "article:published_time"
+    ]
+  },
+
+  "post_template": {
+    "filename_pattern": "blog/{slug}/index.html",
+    "required_sections": [
+      "Introdução (2-3 parágrafos, inclui keyword principal)",
+      "Corpo (3-5 seções com H2, conteúdo útil e original)",
+      "CTA final (link para reserva ou contato)",
+      "Links internos naturais no texto"
+    ],
+    "footer_cta": "Hospede-se na Pousada Recanto dos Pôneis — seu refúgio rural na Serra Catarinense, com passeios a cavalo inclusos e natureza de tirar o fôlego."
+  },
+
+  "published": [],
+
+  "upcoming": [
+    {
+      "topic": "Cachoeiras imperdíveis perto de Rio Rufino na Serra Catarinense",
+      "pillar": "Destino",
+      "target_keywords": ["cachoeiras serra catarinense", "cachoeira rio rufino", "cachoeiras urubici"],
+      "target_date": "2026-04-18",
+      "slug": "cachoeiras-serra-catarinense"
+    },
+    {
+      "topic": "Passeio a cavalo na Serra Catarinense: o que esperar e por que as crianças amam",
+      "pillar": "Experiência",
+      "target_keywords": ["passeio a cavalo serra catarinense", "cavalgada urubici", "passeio a cavalo crianças"],
+      "target_date": "2026-04-25",
+      "slug": "passeio-cavalo-serra-catarinense"
+    },
+    {
+      "topic": "O que fazer em Rio Rufino: guia completo para famílias",
+      "pillar": "Destino",
+      "target_keywords": ["rio rufino o que fazer", "turismo rio rufino", "rio rufino serra catarinense"],
+      "target_date": "2026-05-02",
+      "slug": "o-que-fazer-rio-rufino"
+    },
+    {
+      "topic": "Benefícios do contato com animais para crianças: como a vida no campo transforma",
+      "pillar": "Família",
+      "target_keywords": ["contato com animais crianças", "benefícios animais crianças", "fazenda crianças SC"],
+      "target_date": "2026-05-09",
+      "slug": "contato-animais-criancas-beneficios"
+    },
+    {
+      "topic": "Serra do Corvo Branco: como visitar o maior corte em rocha do Brasil",
+      "pillar": "Destino",
+      "target_keywords": ["serra do corvo branco", "corvo branco urubici", "serra catarinense pontos turísticos"],
+      "target_date": "2026-05-16",
+      "slug": "serra-corvo-branco-como-visitar"
+    },
+    {
+      "topic": "O que levar para uma viagem à Serra Catarinense com crianças",
+      "pillar": "Dicas práticas",
+      "target_keywords": ["o que levar serra catarinense", "viagem serra catarinense crianças", "dicas serra catarinense"],
+      "target_date": "2026-05-23",
+      "slug": "o-que-levar-serra-catarinense"
+    },
+    {
+      "topic": "Inverno na Serra Catarinense: neve, sincelo e experiências únicas",
+      "pillar": "Destino",
+      "target_keywords": ["inverno serra catarinense", "neve urubici", "sincelo serra catarinense"],
+      "target_date": "2026-05-30",
+      "slug": "inverno-serra-catarinense"
+    },
+    {
+      "topic": "Pousada pet friendly na Serra Catarinense: viaje com seu melhor amigo",
+      "pillar": "Experiência",
+      "target_keywords": ["pousada pet friendly serra catarinense", "viajar com cachorro serra", "hotel pet SC"],
+      "target_date": "2026-06-06",
+      "slug": "pousada-pet-friendly-serra"
+    }
+  ]
+}

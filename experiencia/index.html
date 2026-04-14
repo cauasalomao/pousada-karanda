@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<title>Experiência — Pousada Recanto dos Pôneis | Cavalos, Pescaria, Quadriciclo na Serra Catarinense</title>
+<meta name="description" content="Descubra as atividades da Pousada Recanto dos Pôneis: passeios a cavalo inclusos, pescaria no lago, quadriciclo, colheita de frutas e contato com animais na Serra Catarinense.">
+<meta property="og:title" content="Experiência | Pousada Recanto dos Pôneis — Serra Catarinense">
+<meta property="og:description" content="Descubra as atividades da Pousada Recanto dos Pôneis: passeios a cavalo inclusos, pescaria no lago, quadriciclo, colheita de frutas e contato com animais na Serra Catarinense.">
+<meta property="og:image" content="https://recantodosponeis.com.br/assets/img/hero/fachada.jpg">
+<meta property="og:url" content="https://recantodosponeis.com.br/experiencia/">
+<link rel="canonical" href="https://recantodosponeis.com.br/experiencia/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:image" content="https://recantodosponeis.com.br/assets/img/hero/fachada.jpg">
+
+<!-- GTM HEAD: Inserir quando disponível -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+/* ── EXPERIENCE PAGE SPECIFIC ── */
+.exp-intro { max-width:700px; margin:0 auto; text-align:center; }
+.exp-intro h2 { margin:.5rem 0 1rem; }
+.exp-intro p { margin:0 auto; font-size:1.05rem; }
+
+/* ── FEATURE BLOCK (imagem + texto lado a lado) ── */
+.feat-block { display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem,6vw,6rem); align-items:center; margin-bottom:clamp(5rem,10vw,8rem); }
+.feat-block.reverse { direction:rtl; }
+.feat-block.reverse > * { direction:ltr; }
+.feat-img { position:relative; overflow:hidden; aspect-ratio:4/3; }
+.feat-img img { width:100%; height:100%; object-fit:cover; transition:transform .5s; opacity:1; }
+.feat-img:hover img { transform:scale(1.04); }
+.feat-txt { display:flex; flex-direction:column; gap:.9rem; }
+.feat-tag { display:inline-flex; align-items:center; gap:.5rem; font-family:var(--font-body); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--cta); font-weight:700; }
+.feat-tag span { font-size:1.3rem; }
+.feat-txt h2 { margin:.2rem 0; }
+.feat-txt p { font-size:.96rem; }
+.feat-list { list-style:none; display:flex; flex-direction:column; gap:.5rem; margin-top:.3rem; }
+.feat-list li { display:flex; align-items:flex-start; gap:.6rem; font-size:.88rem; color:var(--text-muted); line-height:1.6; }
+.feat-list li::before { content:'—'; color:var(--cta); flex-shrink:0; margin-top:.05rem; }
+
+/* ── TEXT-ONLY CARD (sem foto) ── */
+.txt-block { background:var(--surface); border-left:4px solid var(--accent); padding:2.5rem 2.5rem 2.5rem 2rem; box-shadow:var(--shadow); display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:start; margin-bottom:clamp(5rem,10vw,8rem); }
+.txt-block-icon { font-size:3.5rem; line-height:1; margin-bottom:1rem; display:block; }
+.txt-block-tag { display:flex; align-items:center; gap:.5rem; font-family:var(--font-body); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--cta); font-weight:700; margin-bottom:.6rem; }
+.txt-block h2 { margin:.2rem 0 .8rem; font-size:clamp(1.8rem,4vw,3rem); }
+.txt-block p { font-size:.95rem; }
+.txt-block-cols { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1rem; }
+.txt-item { background:var(--surface-light); padding:1.2rem; border-top:2px solid var(--accent); }
+.txt-item h4 { font-size:.75rem; letter-spacing:.1em; margin-bottom:.4rem; color:var(--text); }
+.txt-item p { font-size:.82rem; max-width:100%; line-height:1.65; }
+
+/* ── FOTOS GRID 4 ── */
+.area-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:3rem; }
+.area-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; opacity:1; transition:transform .4s; }
+.area-grid img:hover { transform:scale(1.03); }
+
+/* MOBILE */
+@media(max-width:768px){
+  .feat-block,.feat-block.reverse { grid-template-columns:1fr; direction:ltr; }
+  .txt-block { grid-template-columns:1fr; }
+  .txt-block-cols { grid-template-columns:1fr; }
+  .area-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:480px){
+  .area-grid { grid-template-columns:1fr; }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Experiência — Cavalos, Pescaria, Quadriciclo e Natureza",
+  "description": "Descubra as atividades da Pousada Recanto dos Pôneis: passeios a cavalo inclusos, pescaria no lago, quadriciclo, colheita de frutas e contato com animais na Serra Catarinense.",
+  "url": "https://recantodosponeis.com.br/experiencia/",
+  "isPartOf": {"@type":"WebSite","url":"https://recantodosponeis.com.br/","name":"Pousada Recanto dos Pôneis"},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://recantodosponeis.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Experiência","item":"https://recantodosponeis.com.br/experiencia/"}
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- GTM BODY: Inserir quando disponível -->
+
+<!-- HEADER -->
+<header class="hdr solid" id="hdr">
+  <div class="hdr-inner">
+    <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="Pousada Recanto dos Pôneis" class="logo-img"></a>
+    <nav class="nav desktop-nav">
+      <a href="../sobre/">Sobre</a>
+      <a href="../experiencia/" style="color:var(--cta)">Experiência</a>
+      <a href="../acomodacoes/">Acomodações</a>
+      <a href="../galeria/">Galeria</a>
+      <a href="../localizacao/">Localização</a>
+      <a href="../blog/">Blog</a>
+      <a href="../contato/">Contato</a>
+    </nav>
+    <a href="../contato/" class="hdr-btn">Reservar</a>
+    <button class="ham" id="ham" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobnav" id="mobnav">
+  <a href="../sobre/" onclick="closeMob()">Sobre</a>
+  <a href="../experiencia/" onclick="closeMob()">Experiência</a>
+  <a href="../acomodacoes/" onclick="closeMob()">Acomodações</a>
+  <a href="../galeria/" onclick="closeMob()">Galeria</a>
+  <a href="../localizacao/" onclick="closeMob()">Localização</a>
+  <a href="../blog/" onclick="closeMob()">Blog</a>
+  <a href="../contato/" onclick="closeMob()">Contato</a>
+  <a href="../contato/" class="btn-gold" style="margin-top:1rem" onclick="closeMob()">Reservar Agora</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="pg-hero">
+  <img src="../assets/img/hero/fachada.jpg" alt="Experiência — Pousada Recanto dos Pôneis" class="loaded">
+  <div class="pg-hero-c">
+    <span class="overline">Lazer & Natureza</span>
+    <h1>A Experiência Recanto dos Pôneis</h1>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <div class="container">
+    <div class="exp-intro">
+      <p class="overline">O que nos diferencia</p>
+      <h2>Muito mais que uma hospedagem</h2>
+      <div class="divider cx"></div>
+      <p>No Recanto dos Pôneis, cada dia é uma aventura. Das cavalgadas pela serra à pescaria no lago, da colheita de frutas ao contato com pôneis — aqui você vive o campo de verdade.</p>
+    </div>
+
+    <!-- FOTOS DA ÁREA -->
+    <div class="area-grid" style="margin-top:3.5rem">
+      <img src="../assets/img/sobre/area-01.jpg" alt="Área externa — Pousada Recanto dos Pôneis">
+      <img src="../assets/img/sobre/area-02.jpg" alt="Área comum — Pousada Recanto dos Pôneis">
+      <img src="../assets/img/sobre/area-03.jpg" alt="Área de lazer — Pousada Recanto dos Pôneis">
+      <img src="../assets/img/sobre/area-04.jpg" alt="Jardim — Pousada Recanto dos Pôneis">
+    </div>
+  </div>
+</section>
+
+<!-- PASSEIO A CAVALO — feat-block com foto -->
+<section style="background:var(--surface-light)">
+  <div class="container">
+    <div class="feat-block">
+      <div class="feat-img">
+        <img src="../assets/img/experiencia/cavalo.jpg" alt="Passeio a Cavalo — Pousada Recanto dos Pôneis" loading="lazy">
+      </div>
+      <div class="feat-txt">
+        <div class="feat-tag"><span>🐴</span> Lazer Incluso</div>
+        <h2>Passeio a Cavalo</h2>
+        <div class="divider" style="margin:.5rem 0"></div>
+        <p>Aqui na Pousada Recanto dos Pôneis os passeios a cavalo são livres — você não paga nada a mais. Dispomos de cavalos bem domados e mansos, além de pôneis para a diversão das crianças. Nosso caseiro orienta quem não sabe montar até se sentir seguro.</p>
+        <ul class="feat-list">
+          <li>Para cada 2 diárias, 1 dia de passeio incluso</li>
+          <li>Horários: 10h–12h e 15h–18h (exceto domingos)</li>
+          <li>Cavalos mansos e bem cuidados</li>
+          <li>Pôneis para as crianças</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PESCARIA — feat-block reverse com foto -->
+<section>
+  <div class="container">
+    <div class="feat-block reverse">
+      <div class="feat-img">
+        <img src="../assets/img/experiencia/pescaria.jpg" alt="Pescaria no Lago — Pousada Recanto dos Pôneis" loading="lazy">
+      </div>
+      <div class="feat-txt">
+        <div class="feat-tag"><span>🎣</span> Lazer & Aventura</div>
+        <h2>Pescaria no Lago</h2>
+        <div class="divider" style="margin:.5rem 0"></div>
+        <p>A pescaria é livre nos nossos 3 açudes com carpas, traíras e carás. Se você for paciente, poderá pescar uma carpa de até 5 kg! Traga seus equipamentos ou use nossas varas. O peixe pescado pode ser consumido sem custo adicional.</p>
+        <ul class="feat-list">
+          <li>Carpas capim e húngara, traíras e carás</li>
+          <li>Varas de pescar disponíveis</li>
+          <li>Peixe pescado pode ser consumido</li>
+          <li>Ideal para a garotada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUADRICICLO — txt-block sem foto -->
+<section style="background:var(--surface-light)">
+  <div class="container">
+    <div class="txt-block">
+      <div>
+        <span class="txt-block-icon">🏍️</span>
+        <div class="txt-block-tag">Aventura</div>
+        <h2>Quadriciclo</h2>
+        <p>Dois quadriciclos super potentes (520 e 420 cilindradas), para uma experiência incrível com segurança. Passeio dentro da propriedade com acompanhante na carona. Ou, sem custo, um passeio na carretinha puxada pelo quadriciclo — com ou sem emoção, você escolhe!</p>
+      </div>
+      <div class="txt-block-cols">
+        <div class="txt-item">
+          <h4>💰 R$ 75/15min ou R$ 300/1h</h4>
+          <p>Valores por passeio dentro da propriedade.</p>
+        </div>
+        <div class="txt-item">
+          <h4>👥 Máximo 2 pessoas (16+ anos)</h4>
+          <p>Piloto e um acompanhante na carona.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🎢 Carretinha grátis puxada pelo quadriciclo</h4>
+          <p>Passeio sem custo — com ou sem emoção, você escolhe!</p>
+        </div>
+        <div class="txt-item">
+          <h4>🛡️ Equipamentos seminovos 2019</h4>
+          <p>Quadriciclos bem mantidos para sua segurança.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO COM ANIMAIS — feat-block com foto -->
+<section>
+  <div class="container">
+    <div class="feat-block">
+      <div class="feat-img">
+        <img src="../assets/img/experiencia/animais.jpg" alt="Contato com Animais — Pousada Recanto dos Pôneis" loading="lazy">
+      </div>
+      <div class="feat-txt">
+        <div class="feat-tag"><span>🐾</span> Vida no Campo</div>
+        <h2>Contato com Animais</h2>
+        <div class="divider" style="margin:.5rem 0"></div>
+        <p>A pousada é lar de pôneis, cavalos, patos, gansos, galinhas, ovelhas, bois e até um porquinho. As crianças podem alimentar os pôneis com cenouras, colher ovos direto do galinheiro e alimentar o porquinho. Uma experiência que marca a infância para sempre.</p>
+        <ul class="feat-list">
+          <li>Alimentar os pôneis com cenouras</li>
+          <li>Colher ovos do galinheiro</li>
+          <li>Alimentar o porquinho</li>
+          <li>Fotos com os pôneis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIS ATIVIDADES — txt-block -->
+<section style="background:var(--surface-light)">
+  <div class="container">
+    <div class="txt-block">
+      <div>
+        <span class="txt-block-icon">🌳</span>
+        <div class="txt-block-tag">Lazer Livre</div>
+        <h2>Ainda Tem Mais</h2>
+        <p>São dezenas de atividades inclusas na diária para todas as idades. Aventura, descanso e diversão no mesmo lugar.</p>
+      </div>
+      <div class="txt-block-cols">
+        <div class="txt-item">
+          <h4>🚲 Bicicletas adulto e infantil</h4>
+          <p>Pedale pela propriedade e arredores sem custo.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🏠 Casinha na árvore</h4>
+          <p>Diversão garantida para crianças e adolescentes.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🍎 Colheita de maçã e uva (jan-mar)</h4>
+          <p>Colha direto do pé na temporada de frutas.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🛶 Canoa no lago</h4>
+          <p>Passeie de canoa pelos açudes da pousada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLHEITA DE FRUTAS — feat-block reverse com foto -->
+<section>
+  <div class="container">
+    <div class="feat-block reverse">
+      <div class="feat-img">
+        <img src="../assets/img/experiencia/colheita.jpg" alt="Colheita de Frutas — Pousada Recanto dos Pôneis" loading="lazy">
+      </div>
+      <div class="feat-txt">
+        <div class="feat-tag"><span>🍇</span> Experiência Sazonal</div>
+        <h2>Colheita de Frutas</h2>
+        <div class="divider" style="margin:.5rem 0"></div>
+        <p>Temos o privilégio de estar próximos de produtores de uvas, morangos e framboesas orgânicas. Além de colher direto do pé, você pode adquirir produtos como doces, geleias, licores e sucos. No outono (a partir de abril), participe da colheita do pinhão — sensacional!</p>
+        <ul class="feat-list">
+          <li>Morangos e framboesas orgânicas (Lagoa Preta)</li>
+          <li>Colheita de uvas (Rio do Tigre)</li>
+          <li>Pinhão no outono</li>
+          <li>Artesanato de vime (Rio Gargantilho)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PET FRIENDLY — txt-block -->
+<section style="background:var(--surface-light)">
+  <div class="container">
+    <div class="txt-block">
+      <div>
+        <span class="txt-block-icon">🐶</span>
+        <div class="txt-block-tag">Pet Friendly</div>
+        <h2>Traga Seu Pet</h2>
+        <p>Sabemos como é triste deixar seu amiguinho para trás. Por isso, permitimos que você traga seu pet para desfrutar junto os momentos de lazer.</p>
+      </div>
+      <div class="txt-block-cols">
+        <div class="txt-item">
+          <h4>💰 Taxa: R$ 100/diária por pet</h4>
+          <p>Valor cobrado por diária para seu amiguinho.</p>
+        </div>
+        <div class="txt-item">
+          <h4>📋 Máximo 1 pet por estadia</h4>
+          <p>Limitamos a 1 pet por reserva.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🐕 Cães sempre na guia ou no colo</h4>
+          <p>Há outros cães soltos na pousada, por segurança.</p>
+        </div>
+        <div class="txt-item">
+          <h4>🧹 Tutor responsável pela limpeza</h4>
+          <p>Cuidados com higiene dentro e fora do chalé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--accent);padding:clamp(4rem,8vw,6rem) 0">
+  <div class="container" style="text-align:center">
+    <p class="overline" style="color:rgba(255,255,255,.7);text-align:center;display:block;margin:0 auto">Viva essa experiência</p>
+    <h2 style="color:#fff;margin:.6rem auto 1rem;text-align:center">Reserve sua estadia agora</h2>
+    <div class="divider cx" style="background:rgba(255,255,255,.5)"></div>
+    <p style="color:rgba(255,255,255,.8);margin:.8rem auto 2rem;max-width:50ch">Cavalos, pescaria, quadriciclo, natureza e muito mais esperam por você na Serra Catarinense.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="../contato/" class="btn-outline-w">Fale Conosco</a>
+      <a href="https://wa.me/554935127136" target="_blank" rel="noopener" class="btn-gold">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <span class="logo">Recanto dos Pôneis</span>
+        <p>Sua experiência rural autêntica na Serra Catarinense. Chalés rústicos, passeios a cavalo e natureza de tirar o fôlego.</p>
+        <div class="ft-social">
+          <a href="https://instagram.com/recantodosponeis" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/554935127136" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Navegação</h4>
+        <a href="../sobre/">Sobre a Pousada</a>
+        <a href="../experiencia/">Experiência</a>
+        <a href="../acomodacoes/">Acomodações</a>
+        <a href="../galeria/">Galeria</a>
+        <a href="../localizacao/">Localização</a>
+        <a href="../blog/">Blog</a>
+        <a href="../contato/">Contato</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contato</h4>
+        <span>📞 (49) 3512-7136</span>
+        <span>✉️ recanto.poneis@gmail.com</span>
+        <span>📍 SC 370 Km 34, Rio do Tigre 001</span>
+        <span>Rio Rufino – SC</span>
+        <span>CEP 88658-000</span>
+      </div>
+      <div class="ft-col">
+        <h4>Atrações Próximas</h4>
+        <span>🏔️ Serra do Corvo Branco</span>
+        <span>💧 Cachoeira Rio do Tigre</span>
+        <span>⛰️ Morro das Torres</span>
+        <span>🏔️ Pedra Furada</span>
+        <span>❄️ Cascata que Congela</span>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2025 Pousada Recanto dos Pôneis · Todos os direitos reservados</p>
+      <p>Desenvolvido por <a href="#" target="_blank">Komplexa Hotéis</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WA BUTTON -->
+<a class="wa-btn" href="https://wa.me/554935127136" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- COOKIE BANNER -->
+<div class="ck" id="cookieBanner">
+  <div class="ck-in">
+    <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a> e o uso de cookies.</p>
+    <div style="display:flex;gap:.6rem;flex-shrink:0">
+      <button class="btn-green" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="acceptCookies()">Aceitar</button>
+      <button class="btn-outline" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="declineCookies()">Recusar</button>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
