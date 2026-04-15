@@ -385,7 +385,7 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
 }
 
 /* Logo branca no hero (filtro inverte para branco) */
-.logo-img { filter: brightness(0) invert(1); transition: filter .3s; }
+.logo-img { height:40px; width:auto; filter: brightness(0) invert(1); transition: filter .3s; }
 
 /* Logo colorida/original quando header fica sólido */
 .hdr.solid .logo-img { filter: none; }
