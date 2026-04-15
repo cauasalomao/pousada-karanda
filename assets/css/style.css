@@ -116,7 +116,7 @@ img.loaded { opacity:1; }
 .hero { position:relative; height:100vh; min-height:600px; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; }
 .hero-bg { position:absolute; inset:0; }
 .hero-bg img { width:100%; height:100%; object-fit:cover; opacity:1; }
-.hero-ov { position:absolute; inset:0; background:linear-gradient(to bottom,rgba(20,24,14,.45) 0%,rgba(20,24,14,.55) 40%,rgba(20,24,14,.78) 100%); }
+.hero-ov { position:absolute; inset:0; background:linear-gradient(to bottom,rgba(20,24,14,.6) 0%,rgba(20,24,14,.65) 40%,rgba(20,24,14,.85) 100%); }
 .hero-c { position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; text-align:center; padding:0 clamp(1.5rem,4vw,3rem); width:100%; gap:clamp(1.4rem,3vh,2.2rem); }
 .hero-overline { font-family:var(--font-body); font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(255,255,255,.78); font-weight:600; display:block; margin:0; }
 .hero-title { font-family:var(--font-display); font-size:clamp(4.5rem,12vw,9rem); font-weight:400; line-height:1; color:#fff; margin:0; }
