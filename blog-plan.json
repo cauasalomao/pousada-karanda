@@ -56,16 +56,17 @@
     "footer_cta": "Hospede-se na Pousada Recanto dos Pôneis — seu refúgio rural na Serra Catarinense, com passeios a cavalo inclusos e natureza de tirar o fôlego."
   },
 
-  "published": [],
-
-  "upcoming": [
+  "published": [
     {
       "topic": "Cachoeiras imperdíveis perto de Rio Rufino na Serra Catarinense",
       "pillar": "Destino",
       "target_keywords": ["cachoeiras serra catarinense", "cachoeira rio rufino", "cachoeiras urubici"],
-      "target_date": "2026-04-18",
+      "published_date": "2026-04-14",
       "slug": "cachoeiras-serra-catarinense"
-    },
+    }
+  ],
+
+  "upcoming": [
     {
       "topic": "Passeio a cavalo na Serra Catarinense: o que esperar e por que as crianças amam",
       "pillar": "Experiência",

@@ -58,6 +58,12 @@
   </url>
 
   <!-- %%BLOG_POSTS_START%% -->
+  <url>
+    <loc>https://recantodosponeis.com.br/blog/cachoeiras-serra-catarinense/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <!-- %%BLOG_POSTS_END%% -->
 
 </urlset>
