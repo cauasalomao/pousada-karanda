@@ -113,7 +113,7 @@ img.loaded { opacity:1; }
 
 /* ── HERO ── */
 /* ── HERO ── */
-.hero { position:relative; height:100vh; min-height:600px; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; }
+.hero { position:relative; height:calc(100vh / 0.8); min-height:600px; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; }
 .hero-bg { position:absolute; inset:0; }
 .hero-bg img { width:100%; height:100%; object-fit:cover; opacity:1; }
 .hero-ov { position:absolute; inset:0; background:rgba(0,0,0,.55); }
@@ -140,7 +140,8 @@ img.loaded { opacity:1; }
 .strip { background:var(--accent); padding:clamp(2.5rem,5vw,4rem) 0; }
 .strip-g { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
 .strip-i { padding:1rem; }
-.s-icon { font-size:2rem; margin-bottom:.8rem; }
+.s-icon { font-size:2rem; margin-bottom:.8rem; color:#fff; }
+.s-icon i { font-size:2.2rem; }
 .strip-i h4 { color:#fff; font-size:.78rem; letter-spacing:.1em; margin-bottom:.4rem; }
 .strip-i p { color:rgba(255,255,255,.72); font-size:.8rem; max-width:100%; line-height:1.65; }
 
@@ -241,7 +242,10 @@ img.loaded { opacity:1; }
 .sobre-img-sm img { width:100%; height:100%; object-fit:cover; }
 .dif-g { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:3rem; }
 .dif-c { background:var(--surface); padding:2rem; box-shadow:var(--shadow); border-top:3px solid var(--accent); text-align:center; }
-.dif-icon { font-size:2.5rem; margin-bottom:1rem; }
+.dif-icon { font-size:2.5rem; margin-bottom:1rem; color:var(--accent); }
+.dif-icon i { font-size:2.8rem; }
+.badge i { font-size:.8rem; vertical-align:middle; margin-right:.15rem; }
+.ft-col span i, .loc-icon i, .ni-icon i, .ct-block-icon i { vertical-align:middle; margin-right:.3rem; }
 .dif-c h4 { margin-bottom:.6rem; }
 .dif-c p { font-size:.86rem; max-width:100%; }
 
