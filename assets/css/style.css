@@ -322,6 +322,39 @@ img.loaded { opacity:1; }
 .wl-book { display:block; width:100%; text-align:center; text-decoration:none; background:var(--cta); color:#fff; border:none; padding:.85rem; font-family:var(--font-body); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700; cursor:pointer; transition:background .3s; }
 .wl-book:hover { background:var(--cta-hover); }
 
+/* ── MODAL DE RESERVA (Foco Multimídia) ── */
+.bk-modal { position:fixed; inset:0; z-index:9500; background:rgba(0,0,0,.55); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:all .3s var(--ease); padding:1rem; }
+.bk-modal.open { opacity:1; visibility:visible; }
+.bk-modal-box { background:var(--surface); max-width:480px; width:100%; border-radius:12px; overflow:hidden; position:relative; box-shadow:var(--shadow-lg); animation:bkSlideUp .35s var(--ease); }
+@keyframes bkSlideUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+.bk-close { position:absolute; top:1rem; right:1rem; background:var(--surface-light); border:none; width:36px; height:36px; border-radius:50%; font-size:1.4rem; cursor:pointer; z-index:2; display:flex; align-items:center; justify-content:center; line-height:1; color:var(--text); transition:background .2s; }
+.bk-close:hover { background:var(--border); }
+.bk-header { padding:1.5rem 1.8rem 0; display:flex; gap:1rem; align-items:center; }
+.bk-header img { border-radius:8px; object-fit:contain; background:var(--surface-light); }
+.bk-header h3 { font-family:var(--font-body); font-size:1.05rem; font-weight:700; margin:0 0 .15rem; color:var(--text); letter-spacing:.02em; }
+.bk-header p  { font-size:.78rem; color:var(--text-muted); margin:0; line-height:1.4; }
+.bk-form { padding:1.3rem 1.8rem 1.6rem; }
+.bk-row { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-bottom:.8rem; }
+.bk-form .fg { display:flex; flex-direction:column; gap:.3rem; }
+.bk-form label { font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); }
+.bk-form input, .bk-form select { padding:.7rem .8rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--font-body); background:var(--bg); min-height:44px; color:var(--text); transition:border-color .2s; outline:none; }
+.bk-form input:focus, .bk-form select:focus { border-color:var(--accent); }
+.bk-child-ages { display:grid; grid-template-columns:repeat(auto-fill, minmax(110px, 1fr)); gap:.8rem; margin-bottom:.8rem; }
+.bk-child-ages .fg { display:flex; flex-direction:column; gap:.3rem; }
+.bk-child-ages label { font-size:.64rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); }
+.bk-child-ages select { padding:.6rem .7rem; border:1px solid var(--border); border-radius:6px; font-size:.88rem; font-family:var(--font-body); background:var(--bg); min-height:42px; }
+.bk-submit { width:100%; margin-top:.4rem; background:var(--accent); color:#fff; border:none; padding:.95rem; font-family:var(--font-body); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700; cursor:pointer; transition:background .3s; border-radius:6px; }
+.bk-submit:hover { background:var(--accent-hover); }
+.bk-alt { text-align:center; font-size:.8rem; color:var(--text-muted); margin:1rem 0 0; }
+.bk-wa-link { color:#25D366; font-weight:700; text-decoration:none; }
+.bk-wa-link:hover { text-decoration:underline; }
+@media print { .bk-modal { display:none!important; } }
+@media(max-width:480px) {
+  .bk-row { grid-template-columns:1fr; }
+  .bk-header { padding:1.25rem 1.3rem 0; }
+  .bk-form { padding:1rem 1.3rem 1.3rem; }
+}
+
 /* ── POPUP DESCONTO ── */
 .discount-popup { position:fixed; inset:0; z-index:9800; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:all .4s var(--ease); padding:1rem; }
 .discount-popup.open { opacity:1; visibility:visible; }

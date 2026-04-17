@@ -93,7 +93,7 @@
         <a href="../../blog/" class="active">Blog</a>
         <a href="../../contato/">Contato</a>
       </nav>
-      <a href="../../contato/" class="hdr-btn">Reservar</a>
+      <a href="#" onclick="openBooking();return false" class="hdr-btn">Reservar</a>
       <button class="ham" id="ham" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -108,7 +108,7 @@
     <a href="../../localizacao/" onclick="closeMob()">Localização</a>
     <a href="../../blog/" onclick="closeMob()">Blog</a>
     <a href="../../contato/" onclick="closeMob()">Contato</a>
-    <a href="../../contato/" class="btn-gold" style="margin-top:1rem" onclick="closeMob()">Reservar Agora</a>
+    <a href="#" class="btn-gold" style="margin-top:1rem" onclick="closeMob();openBooking();return false">Reservar Agora</a>
   </div>
 
   <!-- ═══ ARTICLE ═══ -->
@@ -149,7 +149,7 @@
           <div class="blog-cta-box">
             <h3>Hospede-se na Pousada Recanto dos Pôneis</h3>
             <p>Seu refúgio rural na Serra Catarinense, com chalés rústicos e passeios a cavalo.</p>
-            <a href="../../contato/" class="btn-green">Reservar Estadia →</a>
+            <a href="#" onclick="openBooking();return false" class="btn-green">Reservar Estadia →</a>
           </div>
         -->
         <!-- %%CONTENT_END%% -->
@@ -181,7 +181,7 @@
       <p style="color:rgba(255,255,255,.78);margin:1.2rem auto 2.5rem;text-align:center">Fale conosco e garanta sua
         estadia na Serra Catarinense</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="../../contato/" class="btn-gold">Fazer Reserva</a>
+        <a href="#" onclick="openBooking();return false" class="btn-gold">Fazer Reserva</a>
         <a class="btn-outline-w" href="https://wa.me/554935127136" target="_blank" rel="noopener">Falar pelo
           WhatsApp</a>
       </div>
