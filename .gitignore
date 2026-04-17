@@ -1,2 +1,4 @@
 pousada-montverde-final/
 .claude/settings.local.json
+*.md
+hotel-config.json
