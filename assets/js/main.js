@@ -1,14 +1,14 @@
 /* ============================================================
-   POUSADA RECANTO DOS PÔNEIS — main.js v3
+   POUSADA KARANDÁ — main.js
    Komplexa Hotéis
    ============================================================ */
 
-const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c33-437f-9073-2fae80d76d2f';
-const HOTEL_NAME  = 'Pousada Recanto dos Pôneis';
-const WA_NUMBER   = '554935127136';
-const WA_MESSAGE  = 'Olá! Gostaria de mais informações sobre a Pousada Recanto dos Pôneis.';
-const BOOKING_URL = 'https://recantodosponeis.com.br/';
-const MOTOR_BASE  = 'https://recantodosponeis.com.br'; // temporário — trocar pela URL do Foco Multimídia quando disponível
+const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/karanda-leads';
+const HOTEL_NAME  = 'Pousada Karandá';
+const WA_NUMBER   = '5519953229959';
+const WA_MESSAGE  = 'Olá! Gostaria de mais informações sobre a Pousada Karandá.';
+const BOOKING_URL = 'https://book.securebookings.net/roomrate?id=5a11db50-224c-1764245213-475e-9fd9-06ac12ffffc6&lang=br';
+const MOTOR_BASE  = 'https://book.securebookings.net/roomrate?id=5a11db50-224c-1764245213-475e-9fd9-06ac12ffffc6&lang=br'; // HotelLink Secure Bookings — deep-link aceita &checkin, &checkout, &adults, &children
 
 // ── dataLayer GTM ──
 window.dataLayer = window.dataLayer || [];
@@ -212,12 +212,19 @@ document.addEventListener('visibilitychange', () => {
   });
 })();
 
-// ── MODAL DE RESERVA (Foco Multimídia) ──
+// ── MODAL DE RESERVA (HotelLink Secure Bookings) ──
 function buildBookingURL(checkin, checkout, adults, childAges) {
   if (!checkin || !checkout) return null;
-  let guestStr = String(adults || 2);
-  if (childAges && childAges.length) guestStr += '-' + childAges.join('-');
-  return `${MOTOR_BASE}/search/${checkin}/${checkout}/${guestStr}`;
+  const params = new URLSearchParams();
+  params.set('checkin', checkin);
+  params.set('checkout', checkout);
+  params.set('adults', String(adults || 2));
+  if (childAges && childAges.length) {
+    params.set('children', String(childAges.length));
+    childAges.forEach((age, i) => params.set(`child${i + 1}age`, String(age)));
+  }
+  const sep = MOTOR_BASE.includes('?') ? '&' : '?';
+  return `${MOTOR_BASE}${sep}${params.toString()}`;
 }
 
 function openBooking() {

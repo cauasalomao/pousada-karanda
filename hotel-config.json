@@ -1,359 +1,227 @@
 {
   "hotel": {
-    "name": "Pousada Recanto dos Pôneis",
-    "tagline": "Sua experiência rural autêntica na Serra Catarinense",
-    "description_short": "Pousada rural em Rio Rufino, Serra Catarinense. Chalés aconchegantes, passeios a cavalo inclusos e contato direto com a natureza e animais.",
-    "description_long": "A Pousada Recanto dos Pôneis nasceu em 2017 da transformação de um sítio de lazer familiar em um refúgio rural acolhedor. Localizada em Rio Rufino, na Serra Catarinense, a pousada oferece chalés completos em madeira rústica, passeios a cavalo e pôneis inclusos na diária, pescaria no lago, quadriciclo e uma infinidade de atividades ao ar livre. É o lugar ideal para famílias que buscam reconectar-se com a natureza, proporcionar experiências únicas com animais para as crianças e viver momentos autênticos de vida no campo.",
-    "style": "Rural autêntico, rústico acolhedor, vida no campo, contato com animais",
-    "target_audience": "Famílias com filhos pequenos ou adolescentes (35-45 anos) que buscam conexão com a natureza, experiências com animais e vida no campo. Também famílias com crianças autistas e grupos de amigos.",
-    "tone": "Acolhedor, familiar, autêntico, caloroso e próximo — como receber amigos em casa. Sem formalidade, com carinho genuíno."
+    "name": "Pousada Karandá",
+    "tagline": "Um refúgio de tranquilidade, natureza e conforto para desacelerar e viver momentos especiais",
+    "description_short": "Pousada em Lindóia/SP, no Circuito das Águas Paulista. Suítes aconchegantes, áreas verdes preservadas e café da manhã acolhedor para desacelerar em meio à natureza.",
+    "description_long": "A Pousada Karandá nasceu em 2025 com o propósito de unir a família e proporcionar experiências marcantes aos hóspedes. A minutos do centro de Lindóia, em um cenário de tranquilidade com áreas verdes preservadas e atmosfera acolhedora, a pousada combina o sossego do campo com o conforto essencial para uma estadia agradável. Cada detalhe foi planejado para criar uma experiência intimista, onde o silêncio, o ar puro e a paisagem natural fazem parte da rotina. Perfeita para casais que celebram datas especiais, famílias e viajantes que buscam fugir do ritmo urbano.",
+    "style": "Refúgio contemplativo, intimismo rural, conforto essencial, bem-estar",
+    "target_audience": "Casais comemorando datas especiais (aniversário de casamento, noivado, lua de mel), famílias e viajantes que buscam desacelerar. Público principal vem de São Paulo (DDD 019 e 011).",
+    "tone": "Acolhedor, contemplativo, voltado à desaceleração e bem-estar. Tom sereno e convidativo, nunca formal."
   },
 
   "contact": {
-    "phone": "(49) 3512-7136",
-    "phone_international": "+55-49-3512-7136",
-    "email": "recanto.poneis@gmail.com",
-    "wa_number": "554935127136",
-    "instagram": "recantodosponeis",
-    "instagram_url": "https://instagram.com/recantodosponeis"
+    "phone": "(19) 95322-9959",
+    "phone_international": "+55-19-95322-9959",
+    "phone_secondary": "(84) 9423-1329",
+    "email": "pousadakaranda@gmail.com",
+    "email_reservations": "yahreservas@gmail.com",
+    "wa_number": "5519953229959",
+    "instagram": "pousadakaranda",
+    "instagram_url": "https://www.instagram.com/pousadakaranda/"
   },
 
   "address": {
-    "street": "SC 370 Km 34, Rio do Tigre 001",
-    "neighborhood": "Rio do Tigre",
-    "city": "Rio Rufino",
-    "state": "SC",
-    "zip": "88658-000",
+    "street": "Rodovia Octavio de Oliveira Santos, 7671",
+    "neighborhood": "Rodrigues",
+    "city": "Lindóia",
+    "state": "SP",
+    "zip": "13950-000",
     "country": "BR",
     "coordinates": {
-      "lat": -27.925,
-      "lng": -49.575
+      "lat": -22.5255,
+      "lng": -46.6497
     }
   },
 
   "business": {
     "cnpj": "",
-    "number_of_units": 4,
-    "checkin_time": "",
-    "checkout_time": "",
+    "number_of_units": 2,
+    "checkin_time": "14:00 às 22:00",
+    "checkout_time": "até 12:00",
     "price_range": "$$",
-    "average_daily_rate": "R$ 987,00",
-    "direct_booking_rate": "95%"
+    "average_daily_rate": "R$ 450,00",
+    "direct_booking_rate": "50%"
   },
 
   "mission_vision_values": {
-    "mission": "Atender seus clientes com excelência, proporcionar conforto e ótimas experiências com segurança, fazendo uma integração com os parceiros locais.",
-    "vision": "Ser uma pousada rural reconhecida como um dos melhores destinos da região serrana de SC, reconhecida pelos clientes, sociedade e fornecedores, pela excelência na prestação dos serviços, implantando sempre que possível novos equipamentos de lazer, melhorar continuamente e crescer com sustentabilidade.",
+    "mission": "Proporcionar um refúgio acolhedor onde casais, famílias e viajantes possam desacelerar, reconectar-se com a natureza e viver momentos especiais.",
+    "vision": "Ser reconhecida como uma das principais pousadas do Circuito das Águas Paulista, referência em acolhimento, conforto e experiência contemplativa.",
     "values": [
-      "Preservação e respeito à fauna e à flora",
-      "Tratar com respeito, ética e honestidade os colaboradores, fornecedores e clientes",
-      "Respeito à diversidade humana e cultural"
+      "Hospitalidade acolhedora e atendimento intimista",
+      "Preservação da natureza e das áreas verdes",
+      "Respeito, ética e honestidade com hóspedes, colaboradores e fornecedores",
+      "Compromisso com o bem-estar de cada hóspede"
     ]
   },
 
   "accommodations": [
     {
-      "category": "luxo",
-      "name": "Chalé Spa Sunset",
-      "label": "Para casais exigentes",
-      "capacity": "1 casal + até 2 filhos pequenos",
-      "area": "100m²",
+      "category": "standard",
+      "name": "Suíte Queen com Varanda",
+      "label": "Quarto Casal Standard",
+      "capacity": "Até 5 pessoas",
+      "area": "24m²",
+      "floor": "Térreo",
+      "bed": "1 Queen Size",
+      "rate_from": "R$ 400,00",
       "highlights": [
-        "Banheira de hidromassagem com cromoterapia",
         "Ar-condicionado",
-        "Lareira",
-        "Cozinha completa com cooktop e cafeteira Dolce Gusto",
-        "Cama Queen de alto padrão com dossel",
-        "Mezanino com 2 camas box solteiro",
-        "Smart TV com Netflix",
-        "Internet 100mb",
-        "Sacada com vista para pôr do sol",
-        "Churrasqueira de alvenaria",
-        "Redes na varanda e no bosque",
-        "À beira de araucárias e regato"
+        "Frigobar / minibar",
+        "Secador de cabelo",
+        "TV Smart de tela plana",
+        "Wi-Fi",
+        "Banheiro privativo com chuveiro e bidê",
+        "Ducha higiênica",
+        "Área para refeições",
+        "Aquecimento",
+        "Varanda privativa"
       ],
-      "image": "assets/img/quartos/chale-spa-sunset.jpg"
+      "image": "assets/img/karanda/suite-queen-1.jpg"
     },
     {
-      "category": "familia",
-      "name": "Chalé dos Lagos",
-      "label": "Para 2 famílias",
-      "capacity": "Até 6 pessoas (2 casais + 1 filho cada)",
+      "category": "superior",
+      "name": "Suíte Queen com Varanda e Hidromassagem",
+      "label": "Quarto Casal Superior",
+      "capacity": "Até 5 pessoas",
+      "area": "24m²",
+      "floor": "Térreo",
+      "bed": "1 Queen Size",
+      "rate_from": "R$ 500,00",
       "highlights": [
-        "Vista para o lago",
-        "2 quartos com 2 camas de casal cada",
-        "Ar-condicionado em cada quarto",
-        "Deck com vista para o lago",
-        "Cozinha conjugada com sala",
-        "Smart TV com Netflix",
-        "Internet 100mb",
-        "Fogão a lenha e a gás",
-        "Churrasqueira de alvenaria",
-        "Lareira"
+        "Banheira de hidromassagem",
+        "Ar-condicionado",
+        "Frigobar / minibar",
+        "Secador de cabelo",
+        "TV Smart de tela plana",
+        "Wi-Fi",
+        "Banheiro privativo com banheira, chuveiro e bidê",
+        "Ducha higiênica",
+        "Área para refeições",
+        "Aquecimento",
+        "Varanda privativa"
       ],
-      "image": "assets/img/quartos/chale-dos-lagos.jpg"
-    },
-    {
-      "category": "familia",
-      "name": "Chalé dos Pôneis",
-      "label": "Para 2 famílias",
-      "capacity": "Até 6 pessoas (2 casais + 1 filho cada)",
-      "highlights": [
-        "Campo gramado com pôneis e cavalos livres",
-        "2 quartos com 2 camas de casal cada",
-        "Ar-condicionado em um quarto, varanda no outro",
-        "Cozinha conjugada com sala",
-        "Internet 100mb",
-        "Fogão a lenha e a gás",
-        "Churrasqueira",
-        "Lareira",
-        "Gangorra, bola, vôlei para crianças",
-        "Contato direto com pôneis"
-      ],
-      "image": "assets/img/quartos/chale-dos-poneis.jpg"
-    },
-    {
-      "category": "grupo",
-      "name": "Casarão",
-      "label": "Para grupos e famílias grandes",
-      "capacity": "Até 12 pessoas",
-      "highlights": [
-        "3 quartos com ar-condicionado",
-        "Cama de casal + triliche por quarto",
-        "Sofá-cama na sala",
-        "2 banheiros com aquecimento a gás",
-        "Lareira",
-        "Fogão a lenha e a gás",
-        "Geladeira + freezer + micro-ondas",
-        "Sala de jogos com sinuca e pebolim",
-        "Churrasqueira com espetos e grelha",
-        "Ideal para escoteiros, jipeiros, bikers, motociclistas"
-      ],
-      "image": "assets/img/quartos/casarao.jpg"
+      "image": "assets/img/karanda/suite-hidro-1.jpg"
     }
   ],
 
   "amenities_all_units": [
-    "Cozinha completa",
-    "Churrasqueira",
-    "Lareira",
-    "Varanda ampla",
-    "Redes para descanso",
-    "Roupas de cama fornecidas",
-    "Lenha para lareira/fogão (2 caixas inclusas)"
+    "Ar-condicionado quente e frio",
+    "Frigobar",
+    "Secador de cabelo",
+    "TV Smart de tela plana",
+    "Wi-Fi",
+    "Varanda privativa",
+    "Banheiro com ducha higiênica",
+    "Café da manhã incluso"
   ],
 
   "differentials": [
-    "Passeios a cavalo e pôneis inclusos na diária, sem custo adicional",
-    "Contato direto com animais: pôneis, cavalos, patos, gansos, galinhas, ovelhas, bois",
-    "Experiência autêntica de vida no campo na Serra Catarinense",
-    "Atendimento altamente personalizado — hóspedes se tornam amigos",
-    "Forte conexão emocional — alto índice de retorno",
-    "Ambiente ideal para crianças, incluindo crianças autistas",
-    "Pet friendly (com regras e taxa)"
+    "Localização privilegiada no Circuito das Águas Paulista, a minutos do centro de Lindóia",
+    "Áreas verdes preservadas e atmosfera intimista",
+    "Café da manhã fresco e selecionado incluso na diária",
+    "Suítes com varanda privativa e aquecimento",
+    "Parcelamento facilitado no cartão",
+    "Ambiente pensado para casais, famílias e quem busca silêncio e reconexão"
   ],
 
-  "activities": {
-    "free": [
-      "Passeios a cavalo e pôneis",
-      "Pescaria no lago (carpas, traíras, carás)",
-      "Canoa no lago",
-      "Casinha na árvore",
-      "Carrinho de correr morro",
-      "Passeio de bicicleta (adulto e infantil)",
-      "Balanço infinito",
-      "Gangorra rústica",
-      "Parquinho infantil",
-      "Alimentação dos pôneis",
-      "Fotos com os pôneis",
-      "Colher ovos do galinheiro",
-      "Alimentar o porquinho",
-      "Colheita de maçã e uvas (jan-mar)",
-      "Pinhão (inverno)",
-      "Contato com animais da pousada",
-      "Passeio de carretinha puxada pelo quadriciclo"
-    ],
-    "paid": [
-      {
-        "name": "Quadriciclo",
-        "price": "R$ 75,00 (15min) ou R$ 300,00 (1h)",
-        "details": "Máximo 2 pessoas acima de 16 anos"
-      },
-      {
-        "name": "Passeio de carretinha adicional",
-        "price": "R$ 100,00"
-      }
-    ]
+  "breakfast": {
+    "included_for_guests": true,
+    "hours": "08h às 10h",
+    "price_non_guests": "R$ 35,00 por pessoa",
+    "description": "Ambiente acolhedor com itens frescos e selecionados para uma manhã leve e agradável."
   },
-
-  "packages": [
-    {
-      "name": "Pacote Romântico",
-      "description": "Ideal para lua de mel, aniversário de casamento, pedidos de noivado ou renovação conjugal",
-      "includes": [
-        "Decoração romântica com pétalas de rosa",
-        "Espumante nacional 750ml com champanheira e gelo",
-        "Garrafa de vinho nacional 750ml",
-        "Chocolates",
-        "Frutas da estação"
-      ]
-    },
-    {
-      "name": "Pacote de Aniversário",
-      "description": "Celebre com decoração e guloseimas",
-      "includes": [
-        "Decoração com balões",
-        "Pipoca, gelatina, guloseimas",
-        "1 bolo médio (8 fatias)",
-        "Refrigerantes"
-      ]
-    }
-  ],
-
-  "pet_policy": {
-    "allowed": true,
-    "fee": "R$ 100,00 por diária, por pet",
-    "max_pets": 1,
-    "rules": [
-      "Não deixar o pet sozinho no chalé",
-      "Cães sempre na guia ou no colo (há cães soltos na pousada)",
-      "Cuidados com limpeza e higiene",
-      "Evitar ruídos que perturbem outros hóspedes",
-      "Danos provocados serão cobrados no check-out"
-    ]
-  },
-
-  "food_policy": "Não fornecemos alimentação. Chalés e casarão possuem cozinha completa. Mercadinhos próximos a 2km e 4km. Restaurante Fratelli faz delivery (49-3279-0218). Café da manhã previsto com conclusão do novo espaço.",
 
   "nearby_attractions": [
     {
-      "name": "Cachoeira Rio do Tigre",
-      "distance": "5km + trilha de 45min",
-      "entry": "R$ 10,00 por pessoa"
+      "name": "Águas de Lindóia",
+      "distance": "~10 km",
+      "note": "Teleférico, Morro do Cruzeiro, fontes de águas minerais"
     },
     {
-      "name": "Cachoeira da Fábrica",
-      "distance": "14km + trilha de 2km",
-      "entry": "Gratuita"
+      "name": "Centro de Lindóia",
+      "distance": "minutos de carro",
+      "note": "Comércio local, restaurantes e atrativos"
     },
     {
-      "name": "Morro do Campestre",
-      "distance": "~30km (via Urubici)",
-      "entry": "R$ 15,00 por pessoa"
+      "name": "Serra Negra",
+      "distance": "~20 km",
+      "note": "Alto da Serra, Pico do Fracasso, malharias e compras"
     },
     {
-      "name": "Cascata do Avencal",
-      "distance": "30km",
-      "entry": "Paga"
+      "name": "Socorro",
+      "distance": "~35 km",
+      "note": "Turismo de aventura: rapel, tirolesa, arvorismo"
     },
     {
-      "name": "Morro das Torres",
-      "distance": "36km",
-      "entry": "Gratuita",
-      "note": "1.750m de altitude, fenômeno do Sincelo no inverno"
+      "name": "Monte Alegre do Sul",
+      "distance": "~25 km",
+      "note": "Cidade histórica, cachoeiras e cafés coloniais"
     },
     {
-      "name": "Serra do Corvo Branco",
-      "distance": "48km pela SC 370",
-      "entry": "Gratuita",
-      "note": "Maior corte em rocha do Brasil (90m)"
+      "name": "Amparo",
+      "distance": "~40 km",
+      "note": "Estação ferroviária histórica, Parque Thermas Water Park"
     },
     {
-      "name": "Cascata que Congela",
-      "distance": "30km",
-      "entry": "Gratuita",
-      "note": "Congela no inverno com temperaturas negativas"
-    },
-    {
-      "name": "Pedra Furada / Morro da Igreja",
-      "distance": "50km",
-      "entry": "Agendamento no ICMBio",
-      "note": "1.822m, segundo cume mais alto de SC"
-    }
-  ],
-
-  "local_restaurants": [
-    {
-      "name": "O Galponeiro GastroPub",
-      "city": "Rio Rufino",
-      "hours": "Seg-Dom 18:30–23:30",
-      "specialty": "Lanches artesanais, petiscos e pizzas com massa caseira",
-      "instagram": "https://www.instagram.com/ogalponeiropub/"
-    },
-    {
-      "name": "Fratelli Pizzaria e Restaurante",
-      "city": "Rio Rufino",
-      "hours": "Seg-Sáb 11:30–14h / Seg-Dom 18:30–00:00",
-      "specialty": "Buffet almoço, lanches e pizzas à noite, delivery disponível",
-      "delivery_phone": "49-3279-0218",
-      "instagram": "https://www.instagram.com/restaurante_fratelli/"
-    },
-    {
-      "name": "Chateau Du Valle",
-      "city": "Urubici",
-      "specialty": "Experiência enogastronômica, vinhos de altitude",
-      "website": "http://www.chateauduvalle.com.br/"
-    },
-    {
-      "name": "Montês",
-      "city": "Urubici",
-      "hours": "Ter-Sáb 12–15h e 19–22h / Dom 12–15h"
+      "name": "Águas de São Pedro",
+      "distance": "~70 km",
+      "note": "Estância hidromineral, SPAs e águas sulfurosas"
     }
   ],
 
   "policies": {
-    "children": "Não pagam de 0 a 2 anos",
-    "payment": "Até 12x nos cartões de crédito",
-    "firewood": "2 caixas inclusas, adicional R$ 30,00/caixa",
-    "towels": "Hóspedes devem trazer toalhas de banho e rosto",
-    "charcoal": "Trazer carvão para churrasqueira"
+    "checkin": "Das 14h às 22h",
+    "checkout": "Até as 12h",
+    "pets": "Não pet-friendly",
+    "cancellation": "Duas tarifas disponíveis no motor de reservas: Não Reembolsável e Flexível (cancelamento gratuito até ~6 dias antes do check-in)",
+    "payment": "Parcelamento facilitado no cartão de crédito",
+    "breakfast": "Café da manhã incluso na diária para hóspedes (08h-10h). Não hóspedes: R$ 35 por pessoa",
+    "taxes": "Todos os impostos e taxas já estão inclusos nas tarifas"
   },
 
-  "expansion_planned": [
-    "Piscina aquecida",
-    "Piscina infantil",
-    "Hidromassagem",
-    "Serviço de café da manhã"
-  ],
-
   "integrations": {
-    "webhook_url": "https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c33-437f-9073-2fae80d76d2f",
+    "webhook_url": "https://webhook.cidigitalmarketing.com/webhook/karanda-leads",
     "gtm_id": "",
-    "booking_engine_url": "https://recantodosponeis.com.br/",
-    "maps_embed_url": "",
-    "domain": "https://recantodosponeis.com.br"
+    "booking_engine_url": "https://book.securebookings.net/roomrate?id=5a11db50-224c-1764245213-475e-9fd9-06ac12ffffc6&lang=br",
+    "booking_engine_provider": "HotelLink Solutions (Secure Bookings)",
+    "maps_embed_url": "https://maps.google.com/maps?q=Pousada+Karand%C3%A1,+Lind%C3%B3ia+-+SP&output=embed",
+    "domain": "https://pousadakaranda.com.br",
+    "managed_by": "Yah Consultoria"
   },
 
   "design": {
-    "primary": "#5b7a3d",
-    "primary_dark": "#1a4922",
-    "accent": "#0a6427",
-    "cta": "#f6b230",
-    "cta_secondary": "#96804b",
-    "highlight": "#adb11d",
-    "bg": "#ffffff",
-    "text": "#000000",
-    "font_display": "Pinyon Script",
+    "primary": "#6a8a6d",
+    "primary_dark": "#3e5a43",
+    "accent": "#6a8a6d",
+    "cta": "#c19759",
+    "cta_secondary": "#9c7a43",
+    "highlight": "#efeae1",
+    "bg": "#fafaf8",
+    "text": "#2a2a2a",
+    "font_display": "Cormorant Garamond",
     "font_body": "Raleway"
   },
 
   "blog": {
-    "enabled": true,
+    "enabled": false,
     "topics_focus": [
-      "Serra Catarinense turismo",
-      "vida rural e natureza",
-      "atividades com crianças na serra",
-      "passeios a cavalo e contato com animais",
-      "cachoeiras e trilhas na Serra Catarinense",
-      "inverno na serra catarinense",
-      "gastronomia serrana",
-      "turismo pet friendly na serra"
+      "Circuito das Águas Paulista",
+      "Lindóia e região",
+      "Turismo contemplativo e bem-estar",
+      "Casais e datas especiais",
+      "Gastronomia local"
     ],
     "seo_region_keywords": [
-      "Rio Rufino", "Serra Catarinense", "Urubici",
-      "Urupema", "Serra do Corvo Branco", "pousada rural SC"
+      "Lindóia", "Circuito das Águas", "Águas de Lindóia",
+      "Serra Negra", "Socorro", "Monte Alegre do Sul",
+      "pousada romântica SP", "pousada Lindóia"
     ],
-    "internal_link_targets": ["acomodacoes", "experiencia", "contato", "galeria"],
-    "cta_default": "Reserve sua estadia na Pousada Recanto dos Pôneis"
+    "internal_link_targets": ["acomodacoes", "localizacao", "contato", "galeria"],
+    "cta_default": "Reserve sua estadia na Pousada Karandá"
+  },
+
+  "owner": {
+    "name": "Fernando Vieira",
+    "role": "Proprietário"
   }
 }

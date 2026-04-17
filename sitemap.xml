@@ -2,68 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://recantodosponeis.com.br/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://pousadakaranda.com.br/</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://recantodosponeis.com.br/sobre/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://pousadakaranda.com.br/sobre/</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://recantodosponeis.com.br/experiencia/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://recantodosponeis.com.br/acomodacoes/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://pousadakaranda.com.br/acomodacoes/</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://recantodosponeis.com.br/galeria/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://recantodosponeis.com.br/localizacao/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://recantodosponeis.com.br/contato/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://pousadakaranda.com.br/experiencia/</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://recantodosponeis.com.br/blog/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://pousadakaranda.com.br/galeria/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- %%BLOG_POSTS_START%% -->
   <url>
-    <loc>https://recantodosponeis.com.br/blog/cachoeiras-serra-catarinense/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://pousadakaranda.com.br/localizacao/</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-  <!-- %%BLOG_POSTS_END%% -->
+
+  <url>
+    <loc>https://pousadakaranda.com.br/contato/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
