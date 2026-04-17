@@ -726,26 +726,32 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
 
 /* ── Blog CTA Box (inside post) ── */
 .blog-cta-box {
-  background: var(--accent);
-  padding: 2.5rem;
-  margin: 3rem 0 2rem;
-  text-align: center;
-  border-radius: 8px;
+  background: var(--surface);
+  border-left: 4px solid var(--cta);
+  padding: 1.8rem 2rem;
+  margin: 3rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  border-radius: 0;
 }
 .blog-cta-box h3 {
-  font-family: var(--font-body);
-  margin: 0 0 .5rem;
-  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 0;
+  color: var(--accent-hover);
+  line-height: 1.2;
 }
 .blog-cta-box p {
-  text-align: center;
-  margin: 0 auto 1.2rem;
-  color: rgba(255,255,255,.8);
+  margin: 0;
+  font-size: .94rem;
+  color: var(--text-muted);
+  text-align: left;
+  max-width: 100%;
 }
-.blog-cta-box .btn-green {
-  background: #fff;
-  color: var(--accent);
-}
+.blog-cta-box .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: .4rem; }
+.blog-cta-box .btn-outline { color: var(--accent-hover); border-color: var(--accent-hover); }
+.blog-cta-box .btn-outline:hover { background: var(--accent-hover); color: #fff; }
 
 /* ── Blog Responsive ── */
 @media(max-width:640px) {
