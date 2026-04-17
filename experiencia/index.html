@@ -79,9 +79,10 @@
 .sec-green .txt-item h4 { color:#fff; }
 .sec-green .txt-item p { color:rgba(255,255,255,.8); }
 
-/* ── SEÇÃO FUNDO COM FOTO ── */
-.sec-photo { position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; padding:clamp(3.5rem,7vw,6rem) 0; }
-.sec-photo::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,.65); pointer-events:none; }
+/* ── SEÇÃO FUNDO COM FOTO (fixo no viewport via clip-path) ── */
+.sec-photo { position:relative; z-index:0; clip-path:inset(0); padding:clamp(3.5rem,7vw,6rem) 0; isolation:isolate; }
+.sec-photo::before { content:''; position:fixed; inset:0; background-image:var(--bg-photo); background-size:cover; background-position:center; background-repeat:no-repeat; z-index:-2; pointer-events:none; }
+.sec-photo::after { content:''; position:fixed; inset:0; background:rgba(0,0,0,.65); z-index:-1; pointer-events:none; }
 .sec-photo > .container { position:relative; z-index:1; }
 .sec-photo .txt-block { background:rgba(255,255,255,.05); backdrop-filter:blur(4px); border-left-color:var(--cta); box-shadow:0 10px 40px rgba(0,0,0,.3); margin-bottom:0; }
 .sec-photo .txt-block h2, .sec-photo .txt-block > div > p { color:#fff; }
@@ -321,7 +322,7 @@
 </section>
 
 <!-- MAIS ATIVIDADES — txt-block com foto de fundo -->
-<section class="sec-photo" style="background-image:url('../assets/img/noturnas/chale-iluminado.jpg')">
+<section class="sec-photo" style="--bg-photo:url('../assets/img/noturnas/chale-iluminado.jpg')">
   <div class="container">
     <div class="txt-block">
       <div>
@@ -376,7 +377,7 @@
 </section>
 
 <!-- PET FRIENDLY — txt-block com foto de fundo -->
-<section class="sec-photo" style="background-image:url('../assets/img/animais/cachorro-girassois.jpg')">
+<section class="sec-photo" style="--bg-photo:url('../assets/img/animais/cachorro-girassois.jpg')">
   <div class="container">
     <div class="txt-block">
       <div>
