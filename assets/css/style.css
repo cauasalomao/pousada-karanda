@@ -323,7 +323,7 @@ img.loaded { opacity:1; }
 .wl-book:hover { background:var(--cta-hover); }
 
 /* ── MODAL DE RESERVA (Foco Multimídia) ── */
-.bk-modal { position:fixed; inset:0; z-index:9500; background:rgba(0,0,0,.55); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:all .3s var(--ease); padding:1rem; }
+.bk-modal { position:fixed; inset:0; z-index:9500; background:rgba(0,0,0,.55); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:all .3s var(--ease); padding:1rem; overflow-y:auto; overscroll-behavior:contain; }
 .bk-modal.open { opacity:1; visibility:visible; }
 .bk-modal-box { background:var(--surface); max-width:480px; width:100%; border-radius:12px; overflow:hidden; position:relative; box-shadow:var(--shadow-lg); animation:bkSlideUp .35s var(--ease); }
 @keyframes bkSlideUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
@@ -337,7 +337,8 @@ img.loaded { opacity:1; }
 .bk-row { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-bottom:.8rem; }
 .bk-form .fg { display:flex; flex-direction:column; gap:.3rem; }
 .bk-form label { font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); }
-.bk-form input, .bk-form select { padding:.7rem .8rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--font-body); background:var(--bg); min-height:44px; color:var(--text); transition:border-color .2s; outline:none; }
+.bk-form .fg { min-width:0; }
+.bk-form input, .bk-form select { width:100%; min-width:0; max-width:100%; padding:.7rem .8rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--font-body); background:var(--bg); min-height:44px; color:var(--text); transition:border-color .2s; outline:none; }
 .bk-form input:focus, .bk-form select:focus { border-color:var(--accent); }
 .bk-child-ages { display:grid; grid-template-columns:repeat(auto-fill, minmax(110px, 1fr)); gap:.8rem; margin-bottom:.8rem; }
 .bk-child-ages .fg { display:flex; flex-direction:column; gap:.3rem; }
@@ -349,10 +350,13 @@ img.loaded { opacity:1; }
 .bk-wa-link { color:#25D366; font-weight:700; text-decoration:none; }
 .bk-wa-link:hover { text-decoration:underline; }
 @media print { .bk-modal { display:none!important; } }
-@media(max-width:480px) {
+@media(max-width:640px) {
+  .bk-modal { align-items:flex-start; padding:1rem .75rem; }
+  .bk-modal-box { margin:1rem 0; }
   .bk-row { grid-template-columns:1fr; }
-  .bk-header { padding:1.25rem 1.3rem 0; }
-  .bk-form { padding:1rem 1.3rem 1.3rem; }
+  .bk-header { padding:1.25rem 1.2rem 0; gap:.8rem; }
+  .bk-header h3 { font-size:.98rem; }
+  .bk-form { padding:1rem 1.2rem 1.2rem; }
 }
 
 /* ── POPUP DESCONTO ── */
@@ -430,6 +434,9 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
   .wl-box { width:100%; max-width:420px; }
   /* contact grid */
   .ct-form .fg-row { grid-template-columns:1fr; }
+}
+@media(max-width:640px){
+  .hero-scroll { display:none; }
 }
 @media(max-width:480px){
   html { zoom:1; }
