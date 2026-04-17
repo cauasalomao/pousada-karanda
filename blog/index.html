@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<title>Blog — Pousada Karandá | Dicas sobre Lindóia e o Circuito das Águas</title>
+<meta name="description" content="Dicas de viagem, roteiros e inspirações sobre Lindóia, o Circuito das Águas Paulista e momentos para desacelerar na Pousada Karandá.">
+<meta property="og:title" content="Blog | Pousada Karandá">
+<meta property="og:description" content="Dicas de viagem, roteiros e inspirações sobre Lindóia e o Circuito das Águas Paulista.">
+<meta property="og:image" content="https://pousadakaranda.com.br/assets/img/karanda/pousada-hero.jpg">
+<meta property="og:url" content="https://pousadakaranda.com.br/blog/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pousadakaranda.com.br/blog/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:image" content="https://pousadakaranda.com.br/assets/img/karanda/pousada-hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<style>
+  .blog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; margin-top:3rem; }
+  .blog-card { background:var(--bg); border:1px solid var(--border); border-radius:4px; overflow:hidden; display:flex; flex-direction:column; transition:transform .3s, box-shadow .3s; text-decoration:none; color:inherit; }
+  .blog-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+  .blog-card-img { aspect-ratio:16/10; overflow:hidden; }
+  .blog-card-img img { width:100%; height:100%; object-fit:cover; transition:transform .5s; opacity:1; }
+  .blog-card:hover .blog-card-img img { transform:scale(1.04); }
+  .blog-card-body { padding:1.6rem 1.8rem 1.8rem; flex:1; display:flex; flex-direction:column; }
+  .blog-card-pillar { display:inline-block; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cta); font-weight:700; margin-bottom:.6rem; }
+  .blog-card h3 { font-family:var(--font-display); font-size:1.6rem; margin-bottom:.6rem; color:var(--accent-hover); line-height:1.2; }
+  .blog-card p { font-size:.9rem; margin:0 0 1rem; flex:1; }
+  .blog-card time { font-size:.78rem; color:var(--text-muted); letter-spacing:.04em; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog — Pousada Karandá",
+  "description": "Dicas de viagem, roteiros e inspirações sobre Lindóia e o Circuito das Águas Paulista.",
+  "url": "https://pousadakaranda.com.br/blog/",
+  "isPartOf": {"@type":"WebSite","url":"https://pousadakaranda.com.br/","name":"Pousada Karandá"},
+  "publisher": {"@type":"Organization","name":"Pousada Karandá","url":"https://pousadakaranda.com.br/"}
+}
+</script>
+</head>
+<body>
+
+<header class="hdr hero-mode" id="hdr">
+  <div class="hdr-inner">
+    <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="Pousada Karandá" class="logo-img"></a>
+    <nav class="nav">
+      <a href="../sobre/">Sobre</a>
+      <a href="../acomodacoes/">Acomodações</a>
+      <a href="../experiencia/">Experiências</a>
+      <a href="../galeria/">Galeria</a>
+      <a href="../localizacao/">Localização</a>
+      <a href="../blog/" style="color:var(--cta)">Blog</a>
+      <a href="../contato/">Contato</a>
+    </nav>
+    <a href="#" onclick="openBooking();return false" class="hdr-btn">Reservar</a>
+    <button class="ham" id="ham" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobnav" id="mobnav">
+  <a href="../sobre/" onclick="closeMob()">Sobre</a>
+  <a href="../acomodacoes/" onclick="closeMob()">Acomodações</a>
+  <a href="../experiencia/" onclick="closeMob()">Experiências</a>
+  <a href="../galeria/" onclick="closeMob()">Galeria</a>
+  <a href="../localizacao/" onclick="closeMob()">Localização</a>
+  <a href="../blog/" onclick="closeMob()">Blog</a>
+  <a href="../contato/" onclick="closeMob()">Contato</a>
+  <a href="#" class="btn-gold" style="margin-top:1rem" onclick="closeMob();openBooking();return false">Reservar Agora</a>
+</div>
+
+<div class="pg-hero">
+  <img src="../assets/img/karanda/gal-extra.png" alt="Blog — Pousada Karandá" fetchpriority="high" class="loaded">
+  <div class="pg-hero-c">
+    <span class="overline">Dicas & Inspirações</span>
+    <h1>Blog</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="sec-head c">
+      <p class="overline">Nossos posts</p>
+      <h2>Para planejar sua próxima escapada</h2>
+      <div class="divider cx"></div>
+      <p>Roteiros, dicas e inspirações sobre Lindóia, o Circuito das Águas Paulista e a arte de desacelerar.</p>
+    </div>
+
+    <div class="blog-grid" id="blogGrid">
+      <a href="o-que-fazer-em-lindoia/" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/img/karanda/gal-insta-2.jpg" alt="O que fazer em Lindóia" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-pillar">Destino</span>
+          <h3>O que fazer em Lindóia: guia do Circuito das Águas Paulista</h3>
+          <p>Um passeio completo pelas principais atrações de Lindóia e cidades vizinhas — do Morro do Cruzeiro aos cafés coloniais de Monte Alegre do Sul.</p>
+          <time datetime="2026-04-17">17 de abril de 2026</time>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--accent);text-align:center">
+  <div class="container">
+    <p class="overline" style="color:rgba(255,255,255,.65);text-align:center;display:block;margin:0 auto">Hospede-se na Karandá</p>
+    <h2 style="color:#fff;margin:.6rem auto 1rem;text-align:center">Pronto para desacelerar?</h2>
+    <div class="divider cx" style="background:var(--cta)"></div>
+    <p style="color:rgba(255,255,255,.78);margin:1.2rem auto 2.5rem;text-align:center">Reserve sua suíte e use a pousada como base para explorar tudo que o Circuito das Águas oferece.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="#" onclick="openBooking();return false" class="btn-gold">Fazer Reserva</a>
+      <a href="https://wa.me/5519953229959" target="_blank" rel="noopener" class="btn-outline-w">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="Pousada Karandá" class="logo-img"></a>
+        <p>Um refúgio de tranquilidade, natureza e conforto no Circuito das Águas Paulista, em Lindóia/SP.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Navegação</h4>
+        <a href="../sobre/">Sobre a Pousada</a>
+        <a href="../acomodacoes/">Acomodações</a>
+        <a href="../experiencia/">Experiências</a>
+        <a href="../galeria/">Galeria</a>
+        <a href="../localizacao/">Localização</a>
+        <a href="../blog/">Blog</a>
+        <a href="../contato/">Contato</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contato</h4>
+        <span>(19) 95322-9959</span>
+        <span>pousadakaranda@gmail.com</span>
+        <span>Rodovia Octavio de Oliveira Santos, 7671</span>
+        <span>Rodrigues – Lindóia/SP</span>
+      </div>
+      <div class="ft-col">
+        <h4>Circuito das Águas</h4>
+        <span>Águas de Lindóia</span>
+        <span>Serra Negra</span>
+        <span>Socorro</span>
+        <span>Monte Alegre do Sul</span>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>&copy; 2026 Pousada Karandá &middot; Todos os direitos reservados</p>
+      <p>Desenvolvido por <a href="#" target="_blank">Komplexa Hotéis</a></p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-btn" href="https://wa.me/5519953229959" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<div class="ck" id="cookieBanner">
+  <div class="ck-in">
+    <p>Utilizamos cookies para melhorar sua experiência. <a href="#">Política de Privacidade</a>.</p>
+    <div style="display:flex;gap:.6rem;flex-shrink:0">
+      <button class="btn-green" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="acceptCookies()">Aceitar</button>
+      <button class="btn-outline" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="declineCookies()">Recusar</button>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
