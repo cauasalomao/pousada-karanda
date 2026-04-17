@@ -51,7 +51,7 @@
     <nav class="nav">
       <a href="../sobre/">Sobre</a>
       <a href="../acomodacoes/">Acomodações</a>
-      <a href="../experiencia/">Circuito das Águas</a>
+      <a href="../experiencia/">Experiências</a>
       <a href="../galeria/">Galeria</a>
       <a href="../localizacao/">Localização</a>
       <a href="../contato/">Contato</a>
@@ -66,7 +66,7 @@
 <div class="mobnav" id="mobnav">
   <a href="../sobre/" onclick="closeMob()">Sobre</a>
   <a href="../acomodacoes/" onclick="closeMob()">Acomodações</a>
-  <a href="../experiencia/" onclick="closeMob()">Circuito das Águas</a>
+  <a href="../experiencia/" onclick="closeMob()">Experiências</a>
   <a href="../galeria/" onclick="closeMob()">Galeria</a>
   <a href="../localizacao/" onclick="closeMob()">Localização</a>
   <a href="../contato/" onclick="closeMob()">Contato</a>
@@ -137,7 +137,7 @@
         <h4>Navegação</h4>
         <a href="../sobre/">Sobre a Pousada</a>
         <a href="../acomodacoes/">Acomodações</a>
-        <a href="../experiencia/">Circuito das Águas</a>
+        <a href="../experiencia/">Experiências</a>
         <a href="../galeria/">Galeria</a>
         <a href="../localizacao/">Localização</a>
         <a href="../contato/">Contato</a>
@@ -202,6 +202,15 @@
          <div class="gi-ov">⊕</div>
        </div>`
     ).join('');
+    // main.js já passou pelo observer antes destas imagens existirem,
+    // então precisamos anexar manualmente o .loaded para sair do opacity:0
+    grid.querySelectorAll('img').forEach(img => {
+      if (img.complete && img.naturalWidth > 0) img.classList.add('loaded');
+      else {
+        img.addEventListener('load',  () => img.classList.add('loaded'), { once:true });
+        img.addEventListener('error', () => img.classList.add('loaded'), { once:true });
+      }
+    });
   }
   GALLERY.forEach(([path]) => LB_SRCS.push('../assets/img/' + path));
 </script>
