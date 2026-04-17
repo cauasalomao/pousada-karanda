@@ -78,6 +78,19 @@
 .sec-green .txt-item h4 { color:#fff; }
 .sec-green .txt-item p { color:rgba(255,255,255,.8); }
 
+/* ── SEÇÃO FUNDO COM FOTO ── */
+.sec-photo { position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; }
+.sec-photo::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,.65); pointer-events:none; }
+.sec-photo > .container { position:relative; z-index:1; }
+.sec-photo .txt-block { background:rgba(255,255,255,.05); backdrop-filter:blur(4px); border-left-color:var(--cta); box-shadow:0 10px 40px rgba(0,0,0,.3); }
+.sec-photo .txt-block h2, .sec-photo .txt-block > div > p { color:#fff; }
+.sec-photo .txt-block-tag { color:var(--cta); }
+.sec-photo .txt-block-icon { color:#fff; }
+.sec-photo .txt-item { background:rgba(0,0,0,.4); border-top-color:var(--cta); }
+.sec-photo .txt-item h4 { color:#fff; }
+.sec-photo .txt-item p { color:rgba(255,255,255,.85); }
+@media(max-width:768px){ .sec-photo { background-attachment:scroll; } }
+
 /* ── BANNER QUADRICICLO ── */
 .quad-img { width:100%; aspect-ratio:21/9; overflow:hidden; border-radius:10px; margin-bottom:clamp(2rem,4vw,3rem); }
 .quad-img img { width:100%; height:100%; object-fit:cover; display:block; }
@@ -292,8 +305,8 @@
   </div>
 </section>
 
-<!-- MAIS ATIVIDADES — txt-block -->
-<section style="background:var(--surface-light)">
+<!-- MAIS ATIVIDADES — txt-block com foto de fundo -->
+<section class="sec-photo" style="background-image:url('../assets/img/noturnas/chale-iluminado.jpg')">
   <div class="container">
     <div class="txt-block">
       <div>
