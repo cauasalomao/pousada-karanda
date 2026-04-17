@@ -63,6 +63,14 @@
 .area-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; opacity:1; transition:transform .4s; }
 .area-grid img:hover { transform:scale(1.03); }
 
+/* ── SEÇÃO FUNDO VERDE ── */
+.sec-green { background:var(--accent); }
+.sec-green .feat-txt h2, .sec-green .feat-txt p { color:#fff; }
+.sec-green .feat-tag { color:#fff; opacity:.85; }
+.sec-green .feat-list li { color:rgba(255,255,255,.85); }
+.sec-green .feat-list li::before { color:var(--cta); }
+.sec-green .divider { background:var(--cta); }
+
 /* MOBILE */
 @media(max-width:768px){
   .feat-block,.feat-block.reverse { grid-template-columns:1fr; direction:ltr; }
@@ -169,7 +177,7 @@
 </section>
 
 <!-- PASSEIO A CAVALO — feat-block com foto -->
-<section style="background:var(--surface-light)">
+<section class="sec-green">
   <div class="container">
     <div class="feat-block">
       <div class="feat-img">
