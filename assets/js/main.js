@@ -252,6 +252,25 @@ function updateChildAges() {
   }
 }
 
+function submitHeroBooking(e) {
+  e.preventDefault();
+  const ci = document.getElementById('hb-checkin').value;
+  const co = document.getElementById('hb-checkout').value;
+  const adults = document.getElementById('hb-adults').value;
+  const nChildren = parseInt(document.getElementById('hb-children')?.value || '0');
+  if (nChildren > 0) {
+    const bki = document.getElementById('bk-checkin'); if (bki) bki.value = ci;
+    const bko = document.getElementById('bk-checkout'); if (bko) bko.value = co;
+    const bka = document.getElementById('bk-adults'); if (bka) bka.value = adults;
+    const bkc = document.getElementById('bk-children'); if (bkc) bkc.value = String(nChildren);
+    updateChildAges();
+    openBooking();
+    return;
+  }
+  const url = buildBookingURL(ci, co, adults, []);
+  if (url) window.open(url, '_blank', 'noopener');
+}
+
 function submitBooking(e) {
   e.preventDefault();
   const ci = document.getElementById('bk-checkin').value;
