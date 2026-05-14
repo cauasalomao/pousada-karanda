@@ -125,7 +125,7 @@ img.loaded { opacity:1; }
 .hero-ctas { display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; margin:0; }
 .hero-bk { display:none; }
 @media (min-width: 1024px) {
-  .hero-bk { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)) auto; align-items:end; gap:.85rem; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); padding:1rem 1.1rem; border-radius:14px; box-shadow:0 18px 50px rgba(0,0,0,.35); max-width:880px; width:100%; margin:0 auto; }
+  .hero-bk { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)) auto; align-items:end; gap:.85rem; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); padding:1rem 1.1rem; border-radius:14px; box-shadow:0 18px 50px rgba(0,0,0,.35); max-width:720px; width:100%; margin:0 auto; }
   .hero-bk-fg { display:flex; flex-direction:column; gap:.3rem; text-align:left; min-width:0; }
   .hero-bk-fg label { font-family:var(--font-body); font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--text-muted); font-weight:600; }
   .hero-bk-fg input, .hero-bk-fg select { width:100%; padding:.65rem .7rem; border:1px solid #e0dccf; border-radius:8px; font-family:var(--font-body); font-size:.92rem; color:var(--text); background:#fff; transition:border-color .2s, box-shadow .2s; }
@@ -350,10 +350,7 @@ img.loaded { opacity:1; }
 .bk-form .fg { min-width:0; }
 .bk-form input, .bk-form select { width:100%; min-width:0; max-width:100%; padding:.7rem .8rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--font-body); background:var(--bg); min-height:44px; color:var(--text); transition:border-color .2s; outline:none; }
 .bk-form input:focus, .bk-form select:focus { border-color:var(--accent); }
-.bk-child-ages { display:grid; grid-template-columns:repeat(auto-fill, minmax(110px, 1fr)); gap:.8rem; margin-bottom:.8rem; }
-.bk-child-ages .fg { display:flex; flex-direction:column; gap:.3rem; }
-.bk-child-ages label { font-size:.64rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); }
-.bk-child-ages select { padding:.6rem .7rem; border:1px solid var(--border); border-radius:6px; font-size:.88rem; font-family:var(--font-body); background:var(--bg); min-height:42px; }
+.bk-note { font-size:.78rem; color:var(--text-muted); margin:0 0 .9rem; line-height:1.5; }
 .bk-submit { width:100%; margin-top:.4rem; background:var(--accent); color:#fff; border:none; padding:.95rem; font-family:var(--font-body); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700; cursor:pointer; transition:background .3s; border-radius:6px; }
 .bk-submit:hover { background:var(--accent-hover); }
 .bk-alt { text-align:center; font-size:.8rem; color:var(--text-muted); margin:1rem 0 0; }
