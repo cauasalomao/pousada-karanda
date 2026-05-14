@@ -4,3 +4,10 @@ pousada-montverde-final/
 hotel-config.json
 blog-plan.json
 blog-plan.json
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
