@@ -3,7 +3,7 @@
    Komplexa Hotéis
    ============================================================ */
 
-const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/karanda-leads';
+const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c33-437f-9073-2fae80d76d2f';
 const HOTEL_NAME  = 'Pousada Karandá';
 const WA_NUMBER   = '5519953229959';
 const WA_MESSAGE  = 'Olá! Gostaria de mais informações sobre a Pousada Karandá.';
