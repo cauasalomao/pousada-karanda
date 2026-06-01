@@ -266,6 +266,22 @@ img.loaded { opacity:1; }
 .fg input,.fg select,.fg textarea { background:var(--bg); border:1px solid var(--border); color:var(--text); padding:.75rem 1rem; font-family:var(--font-body); font-size:.9rem; outline:none; transition:border-color .3s; width:100%; }
 .fg input:focus,.fg select:focus,.fg textarea:focus { border-color:var(--accent); }
 .fg textarea { resize:vertical; }
+
+/* Datas em formato brasileiro (dd/mm/aaaa) — esconde o texto nativo do
+   input[type=date] (que o navegador renderiza no locale dele, ex.: mm/dd/yyyy)
+   e sobrepõe a data formatada em pt-BR. O ícone/seletor de calendário nativo
+   continua funcionando. Só ativa em navegadores WebKit/Blink; no Firefox o
+   input nativo já segue o locale do SO. */
+.date-br { position:relative; display:block; width:100%; }
+.date-br-disp { display:none; }
+@supports selector(::-webkit-datetime-edit) {
+  .date-br input[type="date"]::-webkit-datetime-edit { color:transparent; }
+  .date-br-disp {
+    display:block; position:absolute; top:50%; transform:translateY(-50%);
+    pointer-events:none; color:var(--text); line-height:1; white-space:nowrap;
+  }
+  .date-br-disp.ph { color:var(--text-muted); }
+}
 .ok-msg { display:none; text-align:center; color:var(--accent); font-weight:700; font-size:.9rem; padding:1rem; }
 .ok-msg.show { display:block; }
 

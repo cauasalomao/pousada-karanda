@@ -305,3 +305,35 @@ function submitBooking(e) {
   bk?.addEventListener('click', e => { if (e.target === bk) closeBooking(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk?.classList.contains('open')) closeBooking(); });
 })();
+
+// ── Exibe os inputs type=date em formato brasileiro (dd/mm/aaaa) ──
+// O <input type=date> nativo mostra a data no locale do navegador (ex.: mm/dd/yyyy).
+// Mantemos o seletor nativo, mas sobrepomos a data formatada em pt-BR (ver .date-br no CSS).
+(function brDateInputs() {
+  function enhance(input) {
+    if (input.dataset.brEnhanced) return;
+    input.dataset.brEnhanced = '1';
+    const cs = getComputedStyle(input);
+    const wrap = document.createElement('span');
+    wrap.className = 'date-br';
+    input.parentNode.insertBefore(wrap, input);
+    wrap.appendChild(input);
+    const disp = document.createElement('span');
+    disp.className = 'date-br-disp ph';
+    disp.style.left = cs.paddingLeft;
+    disp.style.fontFamily = cs.fontFamily;
+    disp.style.fontSize = cs.fontSize;
+    wrap.appendChild(disp);
+    const update = () => {
+      const f = toBrDate(input.value); // YYYY-MM-DD -> DD/MM/YYYY
+      if (f && f !== input.value) { disp.textContent = f; disp.classList.remove('ph'); }
+      else { disp.textContent = 'dd/mm/aaaa'; disp.classList.add('ph'); }
+    };
+    input.addEventListener('input', update);
+    input.addEventListener('change', update);
+    update();
+  }
+  const run = () => document.querySelectorAll('input[type="date"]').forEach(enhance);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+})();
