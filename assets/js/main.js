@@ -7,8 +7,8 @@ const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c3
 const HOTEL_NAME  = 'Pousada Karandá';
 const WA_NUMBER   = '5519953229959';
 const WA_MESSAGE  = 'Olá! Gostaria de mais informações sobre a Pousada Karandá.';
-const BOOKING_URL = 'https://book.securebookings.net/roomrate?id=5a11db50-224c-1764245213-475e-9fd9-06ac12ffffc6&lang=br';
-const MOTOR_BASE  = 'https://book.securebookings.net/roomrate?id=5a11db50-224c-1764245213-475e-9fd9-06ac12ffffc6&lang=br'; // HotelLink Secure Bookings — deep-link aceita &checkin, &checkout, &adults
+const BOOKING_URL = 'https://hbook.hsystem.com.br/Booking?companyId=69f8b11add68df532bdefb6f';
+const MOTOR_BASE  = 'https://hbook.hsystem.com.br/Booking?companyId=69f8b11add68df532bdefb6f'; // HSystem — deep-link aceita &checkin, &checkout, &adults (datas em DD/MM/YYYY)
 
 // ── dataLayer GTM ──
 window.dataLayer = window.dataLayer || [];
@@ -212,19 +212,21 @@ document.addEventListener('visibilitychange', () => {
   });
 })();
 
-// ── MODAL DE RESERVA (HotelLink Secure Bookings) ──
+// ── MODAL DE RESERVA (HSystem) ──
+// Inputs type="date" retornam YYYY-MM-DD; o HSystem espera DD/MM/YYYY.
+function toBrDate(d) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d);
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : d;
+}
 function buildBookingURL(checkin, checkout, adults, childAges) {
   if (!checkin || !checkout) return null;
   const params = new URLSearchParams();
-  params.set('checkin', checkin);
-  params.set('checkout', checkout);
+  params.set('checkin', toBrDate(checkin));
+  params.set('checkout', toBrDate(checkout));
   params.set('adults', String(adults || 2));
-  if (childAges && childAges.length) {
-    params.set('children', String(childAges.length));
-    childAges.forEach((age, i) => params.set(`child${i + 1}age`, String(age)));
-  }
   const sep = MOTOR_BASE.includes('?') ? '&' : '?';
-  return `${MOTOR_BASE}${sep}${params.toString()}`;
+  // URLSearchParams codifica "/" como %2F; o HSystem aceita a barra literal.
+  return `${MOTOR_BASE}${sep}${params.toString().replace(/%2F/g, '/')}`;
 }
 
 function openBooking() {
